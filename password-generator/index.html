@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
     <div class="container">
+        <h1 class="title">Password Generator</h1>
         <div class="content">
             <div class="screen"></div>
             <div class="keyboard">
-                <button class="btn">Generate</button>
-                <button class="btn">Copy</button>
-                <label for="caps">Uppercase letters</label>
-                <input type="checkbox">
-                <label for="lowerCase">Lowercase letters</label>
-                <input type="checkbox">
-                <label for="numbers">Numbers letters</label>
-                <input type="checkbox">
-                <label for="chars">Special Characters</label>
-                <input type="checkbox">
+                <button class="btn gen">Generate</button>
+                <button class="btn copy">Copy</button>
+                <div class="choices">
+                    <label for="length">Password length</label>
+                    <input type="number" min="8" max="15">
+                    <label for="caps">Uppercase letters</label>
+                    <input type="checkbox">
+                    <label for="lowerCase">Lowercase letters</label>
+                    <input type="checkbox">
+                    <label for="numbers">Numbers letters</label>
+                    <input type="checkbox">
+                    <label for="chars">Special Characters</label>
+                    <input type="checkbox">
+                </div>
             </div>
         </div>
     </div>
