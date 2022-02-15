@@ -1,0 +1,92 @@
+body {
+    margin: 0;
+    background-color: black;
+    text-align: center;
+    box-sizing: border-box;
+  }
+  
+  .title {
+    color: white;
+    margin: 3rem 0;
+    font-family: cursive;
+  }
+  
+  .screen {
+    background-color: rgb(48, 47, 47);
+    margin: 2rem auto 2.8rem;
+    border-radius: 0.3rem;
+    color: white;
+    text-align: right;
+    font-size: 1.4rem;
+    padding: 1.2rem 0.5rem;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 5px 5px 5px rgb(37, 37, 37) inset;
+  }
+  .content {
+    background-color: rgb(19, 18, 18);
+    margin: 5rem auto;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 30rem;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 0.6rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn {
+    border-radius: 0.2rem;
+  }
+  
+  .grid-item {
+    padding: 0.3rem;
+    font-size: 1.6rem;
+    background-color: rgb(48, 47, 47);
+    color: white;
+    outline: none;
+    border: none;
+  }
+  
+  #op-clr,
+  #op-del {
+    background-color: darkorange;
+    font-size: 1rem;
+    padding: 1rem;
+  }
+  
+  #op-eq {
+    grid-area: 4 / 4 / 6 / 4;
+    background-color: rgb(6, 6, 218);
+  }
+  
+  .social a {
+    margin: 1rem 0.6rem;
+    font-size: 1rem;
+    color: rgb(114, 113, 113);
+    font-weight: bold;
+    text-decoration: none;
+  }
+  .social a:hover {
+    color: rgb(155, 155, 155);
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .content {
+      width: 25rem;
+    }
+  }
+  
+   @media screen and (max-width: 450px) {
+      .content {
+        width: 20rem;
+      }
+    }
+  
+  @media screen and (max-width: 354px) {
+      .content {
+        width: 15rem;
+    }
