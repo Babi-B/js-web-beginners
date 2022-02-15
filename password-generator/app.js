@@ -4,16 +4,20 @@ let lwCase = document.getElementById("lowerCase");
 let numbers = document.getElementById("numbers");
 let chars = document.getElementById("chars");
 let gen = document.getElementById("gen");
+let copy = document.getElementById("copy");
 let screen = document.getElementById("screen");
 
 
 gen.addEventListener("click", getPassword);
+copy.addEventListener("click", copyToClipboard);
 
 
 function getPassword() {
-    screen.innerHTML = generatePassword();
-    console.log("HEllo");
-    }
+    screen.value = screen.innerHTML = generatePassword();
+}
+function copyToClipboard(){
+    navigator.clipboard.writeText(screen.value);
+}
 
     /* To Generate the password*/
 function generatePassword() {
