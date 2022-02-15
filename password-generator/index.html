@@ -11,17 +11,17 @@
     <div class="container">
       <h1 class="title">Password Generator</h1>
       <div class="content">
-        <div class="screen"></div>
+        <p class="screen" id="screen"></p>
         <div class="keyboard">
-          <button class="btn gen">Generate</button>
-          <button class="btn copy">Copy</button>
+          <button class="btn gen" id="gen" type="button">Generate</button>
+          <button class="btn copy" type="button">Copy</button>
           <div class="choices">
             <label for="length">Password length</label>
             <input type="number" min="8" max="15" id="lenght">
             <label for="caps">Uppercase letters</label>
             <input type="checkbox" id="caps">
             <label for="lowerCase">Lowercase letters</label>
-            <input type="checkbox" id="lwCase">
+            <input type="checkbox" id="lowerCase">
             <label for="numbers">Numbers letters</label>
             <input type="checkbox" id="numbers">
             <label for="chars">Special Characters</label>
@@ -30,5 +30,9 @@
         </div>
       </div>
     </div>
+
+    <!-- Javascript -->
+    <script src="./app.js"></script>
+
   </body>
 </html>

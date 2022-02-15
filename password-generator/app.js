@@ -1,13 +1,22 @@
-document.onload(function (){
+let length = document.getElementById("length");
+let caps = document.getElementById("caps");
+let lwCase = document.getElementById("lowerCase");
+let numbers = document.getElementById("numbers");
+let chars = document.getElementById("chars");
+let gen = document.getElementById("gen");
+let screen = document.getElementById("screen");
 
-    let length = document.getElementById("lenght");
-    let caps = document.getElementById("caps");
-    let lwCase = document.getElementById("lwCase");
-    let numbers = document.getElementById("numbers");
-    let chars = document.getElementById("chars");
-    
+
+gen.addEventListener("click", getPassword);
+
+
+function getPassword() {
+    screen.innerHTML = generatePassword();
+    console.log("HEllo");
+    }
+
     /* To Generate the password*/
-function generatePassword(lenght) {
+function generatePassword() {
     let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
     let symbols = "%!@#$^&*-+=|\\(){}:\"';,?";
     let password = "";
@@ -37,5 +46,3 @@ function generatePassword(lenght) {
     }
     return arr.join("");
   }
-
-})
