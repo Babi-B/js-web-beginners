@@ -77,9 +77,9 @@ body {
     outline: none;
   }
   
-  @media screen and (max-width: 590px) {
+  @media screen and (max-width: 600px) {
     .content {
-      width: 25rem;
+      width: 22rem;
     }
   }
   
