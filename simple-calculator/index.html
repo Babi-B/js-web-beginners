@@ -11,31 +11,33 @@
     <body>
         <h1 class="title">Simple Calculator</h1>
        <div class="content">
-         <div class="screen"></div>
+         <div class="screen" id="screen">0</div>
          <div class="grid-container">
-           <button class="btn grid-item" id="op-clr">Clr</button>
-           <button class="btn grid-item" id="op-division">&#xf7;</button>
-           <button class="btn grid-item" id="op-multiply">x</button>
-           <button class="btn grid-item" id="op-del">Del</button>
-           <button class="btn grid-item" id="7">7</button>
+           <button class="btn grid-item" data-op="clr" id="op-clr">Clr</button>
+           <button class="btn grid-item" data-op="div" id="op-division">&#xf7;</button>
+           <button class="btn grid-item" data-op=""mul id="op-multiply">x</button>
+           <button class="btn grid-item"  data-op="del" id="op-del">Del</button>
+           <button class="btn grid-item" id="svn">7</button>
            <button class="btn grid-item" id="8">8</button>
            <button class="btn grid-item" id="9">9</button>
            <button class="btn grid-item" id="op-minus">-</button>
            <button class="btn grid-item" id="4">4</button>
            <button class="btn grid-item" id="5">5</button>
            <button class="btn grid-item" id="6">6</button>
-           <button class="btn grid-item" id="op-add">+</button>
+           <button class="btn grid-item"  data-op="add" id="op-add">+</button>
            <button class="btn grid-item" id="1">1</button>
            <button class="btn grid-item" id="2">2</button>
            <button class="btn grid-item" id="3">3</button>
-           <button class="btn grid-item" id="op-eq">=</button>
-           <button class="btn grid-item" id="op-percent">%</button>
+           <button class="btn grid-item"  data-op="eq" id="op-eq">=</button>
+           <button class="btn grid-item"  data-op="percent" id="op-percent">%</button>
            <button class="btn grid-item" id="0">0</button>
-           <button class="btn grid-item" id="op-pnt">.</button>
+           <button class="btn grid-item"  data-op="pnt" id="op-pnt">.</button>
          </div>
          <span class="social"><a href="https://dev.to/babib" class="blog">blog</a><a href="https://github.com/Babi-B" class="blog">github</a></span>
-     
        </div>
+
+       <!-- Javascript -->
+       <script src="./app.js"></script>
      </body>
 </body>
 </html>
