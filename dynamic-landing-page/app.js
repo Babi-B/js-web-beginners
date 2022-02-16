@@ -18,7 +18,7 @@ setInterval(() =>{
 
 setInterval(() =>{
     changeByQuote();
-},1000);
+},15000);
 
 
 function getTime(){
