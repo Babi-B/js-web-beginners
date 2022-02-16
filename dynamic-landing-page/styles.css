@@ -15,12 +15,12 @@
     height: 100vh;
     font-family: "Gideon Roman", sans-serif;
   }
-
-  .content{
-      padding: 3rem;
-      background-color: black;
-      opacity: .8;
-      border-radius: 10px;
+  
+  .content {
+    padding: 3rem;
+    background-color: black;
+    opacity: 0.8;
+    border-radius: 10px;
   }
   
   #time {
@@ -33,28 +33,30 @@
     font-weight: bolder;
   }
   #quote {
-      margin-top: 2rem;
-    font-size: 1.6rem;
+    margin-top: 2rem;
+    font-size: 2.2rem;
     font-weight: lighter;
-    font-family: 'Oleo Script Swash Caps', georgia, cursive;  }
+    font-family: "Rouge Script", georgia, cursive;
+  }
   
-    @media screen and (max-width:600px) {
-        #time {
-          font-size: 2rem;
-        }
-        
-        .greeting {
-          font-size: 1rem;
-        }
-        #quote {
-          font-size: 1rem;
-         }
+  @media screen and (max-width: 600px) {
+    #time {
+      font-size: 2rem;
     }
-    @media screen and (max-width:400px) {
-        #time {
-          font-size: 2rem;
-        }
-        .content{
-            padding: 1.2rem;
-        }
+  
+    .greeting {
+      font-size: 1rem;
     }
+    #quote {
+      font-size: 1rem;
+    }
+  }
+  @media screen and (max-width: 400px) {
+    #time {
+      font-size: 2rem;
+    }
+    .content {
+      padding: 1.2rem;
+    }
+  }
+  

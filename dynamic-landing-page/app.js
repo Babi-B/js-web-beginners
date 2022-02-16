@@ -50,13 +50,15 @@ function changeByTime(){
     }
     else if( midi === "PM" && hour > 6){
         greeting.innerHTML = "Good afternoon"
-        display.style.backgroundImage = "url('./img/evening.jpg')";
+        display.style.backgroundImage = "url('./img/afternoon.jpg')";
     }
     else if( midi === "PM" && hour > 8){
-        greeting.innerHTML = "Good evening"
+        greeting.innerHTML = "Good evening";
+        display.style.backgroundImage = "url('./img/evening.jpg')";
     }
     else{
         greeting.innerHTML = "Good night"
+        display.style.backgroundImage = "url('./img/night.jpg')";
     }
 }
 
