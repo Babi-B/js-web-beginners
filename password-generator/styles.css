@@ -1,23 +1,28 @@
-body {
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+body{
+  height: 100vh;
+  background-color: #f9c5d1;
+  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .title {
   color: white;
   font-family: cursive;
   margin-bottom: 4rem;
+  text-align: center;
 }
 
 .container {
   text-align: center;
-  margin: 0;
   padding: 2rem;
-  height: 100vh;
-  background-color: #f9c5d1;
-  background-image: linear-gradient(315deg, #f9c5d1 0%, #9795ef 74%);
-}
+  }
 
 .content {
   background-color: rgb(73, 73, 73);
@@ -25,7 +30,6 @@ body {
   color: white;
   border-radius: 12px;
   width: 30rem;
-  margin: auto;
 }
 .screen {
   background-color: rgb(90, 89, 89);
