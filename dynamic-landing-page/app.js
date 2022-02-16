@@ -3,20 +3,23 @@ let greeting = document.getElementById("greeting");
 let quote = document.getElementById("quote");
 let display = document.getElementById("display");
 
+let quotes = [
+    '“What would you do<br> if you weren\’t afraid?”<br> ― Sheryl Sandberg',
+    '“Ask yourself<br> if what you\’re doing<br> today is getting<br> you closer to where<br> you want to be<br> tomorrow.” — Anonymous',
+    '“Ask yourself if<br> what you\’re doing<br> today is getting you<br> closer to where you<br> want to be tomorrow.”<br> — Anonymous',
+    '“The Way<br> Get Started Is<br> To Quit Talking<br> And Begin Doing.”<br> — Walt Disney', 
+    ' “Procrastination is<br> opportunity\’s assassin.”<br> — Victor Kiam'   
+]
+
 setInterval(() =>{
     getTime();
     changeByTime();
 },1000);
 
 setInterval(() =>{
-    getTime();
-    changeByTime();
-},1080000);
+    changeByQuote();
+},1000);
 
-// setInterval(() =>{
-//     getTime();
-//     greet();
-// },1000);
 
 function getTime(){
     let today = new Date();
@@ -27,7 +30,6 @@ function getTime(){
     // AM PM
     const midi = (today.getHours()) >= 12 ? "PM":"AM";
     time.innerHTML = `${addZero(hour)}<span>:<span>${addZero(min)}<span>:<span>${addZero(sec)}<span>&nbsp;${midi}<span>`
-
 }
 
 function addZero(n){
@@ -48,7 +50,7 @@ function changeByTime(){
     }
     else if( midi === "PM" && hour > 6){
         greeting.innerHTML = "Good afternoon"
-        display.style.backgroundImage = "url('./img/night.jpg')";
+        display.style.backgroundImage = "url('./img/evening.jpg')";
     }
     else if( midi === "PM" && hour > 8){
         greeting.innerHTML = "Good evening"
@@ -56,4 +58,10 @@ function changeByTime(){
     else{
         greeting.innerHTML = "Good night"
     }
+}
+
+function changeByQuote(){
+    let num = Math.floor(Math.random() * 5);
+    console.log(num);
+    quote.innerHTML = quotes[num];
 }
