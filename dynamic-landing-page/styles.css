@@ -4,14 +4,23 @@
     box-sizing: border-box;
   }
   
-  .display {
+  #display {
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background-size: cover;
+    background-position: center;
+    color: white;
     height: 100vh;
-    font-family: "Gideon Roman", cursive;
-    font-weight: bolder;
+    font-family: "Gideon Roman", sans-serif;
+  }
+
+  .content{
+      padding: 3rem;
+      background-color: black;
+      opacity: .8;
+      border-radius: 10px;
   }
   
   #time {
@@ -19,12 +28,33 @@
     margin-bottom: 1rem;
   }
   
-  #greeting {
-    font-size: 1.3rem;
-    margin-bottom: 1rem;
+  .greeting {
+    font-size: 1.6rem;
+    font-weight: bolder;
   }
   #quote {
+      margin-top: 2rem;
     font-size: 1.6rem;
     font-style: italic;
-  }
+    font-family: 'Oleo Script Swash Caps', cursive;  }
   
+    @media screen and (max-width:600px) {
+        #time {
+          font-size: 2rem;
+        }
+        
+        .greeting {
+          font-size: 1rem;
+        }
+        #quote {
+          font-size: 1rem;
+         }
+    }
+    @media screen and (max-width:400px) {
+        #time {
+          font-size: 2rem;
+        }
+        .content{
+            padding: 1.2rem;
+        }
+    }
