@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    font-family: "Gideon Roman", cursive;
+    font-weight: bolder;
+  }
+  
+  #time {
+    font-size: 2.8rem;
+    margin-bottom: 1rem;
+  }
+  
+  #greeting {
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+  }
+  #quote {
+    font-size: 1.6rem;
+    font-style: italic;
+  }
+  
